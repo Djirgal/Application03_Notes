@@ -7,4 +7,5 @@ import ru.learningandroid.application03_notes.domain.Note;
 public interface NotesListView {
 
     void showNotes(List<Note> notesList);
+
 }

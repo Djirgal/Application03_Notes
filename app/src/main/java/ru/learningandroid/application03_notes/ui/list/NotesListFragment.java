@@ -15,6 +15,7 @@ import androidx.fragment.app.Fragment;
 import java.util.List;
 
 import ru.learningandroid.application03_notes.R;
+import ru.learningandroid.application03_notes.domain.InMemoryNotesRepository;
 import ru.learningandroid.application03_notes.domain.Note;
 
 public class NotesListFragment extends Fragment implements NotesListView{
@@ -26,6 +27,11 @@ public class NotesListFragment extends Fragment implements NotesListView{
 
     private NotesListPresenter presenter;
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        presenter = new NotesListPresenter(this, new InMemoryNotesRepository());
+    }
 
     @Nullable
     @Override
@@ -37,6 +43,7 @@ public class NotesListFragment extends Fragment implements NotesListView{
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         notesContainer = view.findViewById(R.id.notes_container);
+        presenter.refresh();
     }
 
     @Override
@@ -52,9 +59,6 @@ public class NotesListFragment extends Fragment implements NotesListView{
                     getParentFragmentManager()
                             .setFragmentResult(RESULT_KEY, data);
 
-//                    if (onCityClicked != null) {
-//                        onCityClicked.onCityClicked(city);
-//                    }
                 }
             });
 
@@ -62,6 +66,6 @@ public class NotesListFragment extends Fragment implements NotesListView{
             noteHeader.setText(note.getHeader());
             notesContainer.addView(itemView);
         }
-
     }
+
 }

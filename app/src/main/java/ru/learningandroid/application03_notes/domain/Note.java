@@ -6,10 +6,16 @@ import android.os.Parcelable;
 
 import androidx.annotation.StringRes;
 
+import java.util.Date;
+
 public class Note implements Parcelable {
 
     @StringRes
     private int header;
+
+    private Date creationDate;
+
+    private Date modificationDate;
 
     @StringRes
     private int body;
