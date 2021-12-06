@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Application03_Notes/app/src/main/res/layout/activity_main.xml" value="0.21388888888888888" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Application03_Notes/app/src/main/res/layout/activity_note_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Admin/AndroidStudioProjects/Application03_Notes/app/src/main/res/layout/fragment_note_detail.xml" value="0.1734375" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Application03_Notes/app/src/main/res/layout/fragment_notes_list.xml" value="0.21388888888888888" />
         <entry key="..\:/Users/Admin/AndroidStudioProjects/Application03_Notes/app/src/main/res/layout/item_note.xml" value="0.21770833333333334" />
       </map>

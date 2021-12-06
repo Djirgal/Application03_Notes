@@ -20,7 +20,7 @@ public class Note implements Parcelable {
     @StringRes
     private int body;
 
-    public Note(int title, int body) {
+    public Note(int header, int body) {
         this.header = header;
         this.body = body;
     }

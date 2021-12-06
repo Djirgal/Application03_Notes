@@ -11,6 +11,7 @@ public class InMemoryNotesRepository implements NotesRepository {
     public List<Note> getAllNotes() {
         ArrayList<Note> result = new ArrayList();
 
+
         result.add(new Note(R.string.note_header_new, R.string.note_body_new));
         result.add(new Note(R.string.note_header1, R.string.note_body1));
         return result;
