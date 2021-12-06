@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Application03_Notes</string>
+    <string name="app_name">MyNotes</string>
     <string name="note_header_new">Создать новую</string>
-    <string name="note_body_new">"Текст новой заметки: "</string>
+    <string name="note_body_new">Текст новой заметки</string>
     <string name="note_header1">Заметка 1</string>
     <string name="note_body1">Текст заметки 1</string>
 </resources>

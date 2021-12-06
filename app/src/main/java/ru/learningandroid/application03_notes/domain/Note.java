@@ -11,14 +11,14 @@ import java.util.Date;
 public class Note implements Parcelable {
 
     @StringRes
-    private int header;
+    private final int header;
 
     private Date creationDate;
 
     private Date modificationDate;
 
     @StringRes
-    private int body;
+    private final int body;
 
     public Note(int header, int body) {
         this.header = header;
@@ -32,6 +32,7 @@ public class Note implements Parcelable {
 
     @Override
     public int describeContents() {
+
         return 0;
     }
 
@@ -57,6 +58,7 @@ public class Note implements Parcelable {
     }
 
     public int getBody() {
+
         return body;
     }
 }

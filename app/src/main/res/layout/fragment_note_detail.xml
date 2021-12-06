@@ -14,7 +14,7 @@
         android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
         tools:text="@string/note_header_new" />
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:id="@+id/note_body"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

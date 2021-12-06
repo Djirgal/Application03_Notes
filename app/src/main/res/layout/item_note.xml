@@ -6,12 +6,12 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
-        android:id="@+id/note_title"
+        android:id="@+id/note_head"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
         android:layout_marginHorizontal="@dimen/default_margin"
         android:layout_marginVertical="@dimen/small_margin"
-        tools:text="@string/note_header_new" />
+        tools:text="Новая З" />
 
 </FrameLayout>

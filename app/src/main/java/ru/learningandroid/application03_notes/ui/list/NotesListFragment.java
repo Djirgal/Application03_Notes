@@ -63,7 +63,7 @@ public class NotesListFragment extends Fragment implements NotesListView{
                 }
             });
 
-            TextView noteHeader = itemView.findViewById(R.id.note_header);
+            TextView noteHeader = itemView.findViewById(R.id.note_head);
             noteHeader.setText(note.getHeader());
             notesContainer.addView(itemView);
         }
