@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/note_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_margin="@dimen/default_margin"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+        tools:text="@string/note_header_new" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/note_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:layout_margin="@dimen/default_margin"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:hint="@string/note_body_new" />
+
+</LinearLayout>
