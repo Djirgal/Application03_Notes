@@ -14,6 +14,8 @@ public class InMemoryNotesRepository implements NotesRepository {
 
         result.add(new Note(R.string.note_header_new, R.string.note_body_new));
         result.add(new Note(R.string.note_header1, R.string.note_body1));
+        result.add(new Note(R.string.note_header2, R.string.note_body2));
+        result.add(new Note(R.string.note_header3, R.string.note_body3));
         return result;
     }
 
